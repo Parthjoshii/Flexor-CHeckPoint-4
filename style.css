@@ -257,8 +257,10 @@ h1 a {
 }
 .hero-absolute {
     position: absolute;
+    margin: 0 auto;
     top: -7rem;
-    left: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .hero-box-orange {
     background-color: #ea5433;

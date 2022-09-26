@@ -406,12 +406,6 @@ h1 a {
     margin-right: 1rem;
     border-radius: 50%;
 }
-.clients .hidden {
-    display: none;
-}
-.hidden {
-    display: none;
-}
 /* Services */
 #services {
     background-color: #fef9f7;
@@ -950,7 +944,7 @@ h1 a {
     }
     /* Clients */
     .hidden {
-        display: inline-block;
+        display: none;
     }
     /* Services */
     .flex-40-r {

@@ -751,6 +751,9 @@ h1 a {
     margin-bottom: 1rem;
     margin-left: 1.5rem;
 }
+.contact-box a {
+    display: block
+}
 .cntct-box address {
     font-size: 0.75rem;
     font-weight: 600;

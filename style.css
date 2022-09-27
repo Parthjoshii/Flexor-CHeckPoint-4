@@ -126,6 +126,9 @@ img {
 h1,h2,h3,h4,h5,h6 {
     font-weight: 600;
 }
+p {
+    line-height: 1.5;
+}
 .topic {
     color: #343333;
     text-align: center;
@@ -412,11 +415,12 @@ h1 a {
     padding:5rem 0;
 }
 .service-box {
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px rgb(117, 116, 116);
     color: #343333;
     padding: 1.5rem;
     position: relative;
     margin-bottom: 2.5rem;
+    background-color: white;
 }
 .icon {
     background-color: #ea5433;
@@ -744,6 +748,9 @@ h1 a {
     color: #343333;
     justify-content: flex-start;
 }
+.cntct-box a {
+    color: #343333;
+}
 .cntct-box h3 {
     font-size: 1.25rem;
     text-transform: capitalize;
@@ -758,7 +765,7 @@ h1 a {
     font-size: 0.75rem;
     font-weight: 600;
     margin-left: 1.5rem;
-    line-height: 1;
+    line-height: 1.5;
 }
 .fa-location-dot, .fa-envelope, .fa-phone-volume {
     padding: 0.5rem;
@@ -867,7 +874,7 @@ h1 a {
     border-radius: 5rem;
     position: absolute;
     right: 0;
-    top: 40%;
+    top: 44%;
 }
 .foot-newsletter .btn:hover {
     background-color: #ea5433;
@@ -894,7 +901,7 @@ h1 a {
     opacity: 0.8;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1024px) {
     html {
         font-size: 12px;
     }
@@ -936,14 +943,15 @@ h1 a {
     .hero-absolute {
         position: absolute;
         top: -7rem;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .hero-box {
         margin-top: 2rem;
     }
     /* About */
     #about {
-        margin-top: 45rem;
+        margin-top: 55rem;
     }
     /* Clients */
     .hidden {
@@ -971,8 +979,8 @@ h1 a {
    .foot-brand {margin-bottom: 2rem;
     }
     .foot-newsletter .btn {
-        padding: 1.25rem 2rem;
-        top: 45%;
+        padding: 1.2rem 2rem;
+        top: 48%;
     }
     .foot-info {
         text-align: center;
@@ -1004,14 +1012,17 @@ h1 a {
     }
     /* About */
     #about {
-        margin-top: 55rem;
+        margin-top: 70rem;
     }
     /* CLients */
     .flex-12 {
         flex: 0 1 48%;
     }
+    .scroll-dots .hidden {
+        display: inline-block;
+    }
     .hidden-r {
-        display: none;
+        display: none
     }
     /* FAQ */
     .faq-box {
@@ -1022,11 +1033,18 @@ h1 a {
         max-width: 100%;
     }
     /* footer */
+    .foot-brand, .foot-links, .foot-newsletter {
+        margin-bottom: 1.5rem;
+    }
     .foot-newsletter .btn {
-        top: 61%;
+        top: 63%;
+        padding: 1.25rem 2rem;
     }
     
 }
+
+
+
 /* Blog Page */
 .page-info {
     background-color: #f4f2f2;
